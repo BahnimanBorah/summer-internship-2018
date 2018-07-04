@@ -18,17 +18,3 @@ class Database{
     }
 }
 ?>
-
-<?php
- $data = new Database();
- $info = $data->getAllData();
-?>
-<div class="container">
-    <ul>
-        <?php
-            foreach($info as $i){
-                echo "<li>".$i[5]."</li>";
-            }
-        ?>
-    </ul>
-</div>
