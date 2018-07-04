@@ -1,3 +1,5 @@
+/** NEWS BULLETIN SLIDE SHOW */
+
 var marqueespeed=1; //Specify marquee scroll speed (larger is faster 1-10)
 var pauseit=1; //Pause marquee onMousever (0=no. 1=yes)?
 
@@ -47,3 +49,22 @@ else if (document.getElementById){
     window.onload=initializemarquee;
 }
 
+/** NEWS BULLETIN SLIDE SHOW ENDS HERE*/
+
+
+/**JQUERY EVENTS */
+
+$(document).ready(function(){
+
+    $(".dropdown-toggle").mouseenter(function(){
+        $(this).dropdown("toggle");
+    });
+    $(".dropdown-menu").mouseleave(function(){
+        $(this).dropdown("toggle");
+    });
+    
+
+});
+
+
+/**JQUERY EVENTS END HERE*/
