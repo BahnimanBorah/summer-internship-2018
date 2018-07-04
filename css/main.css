@@ -1,0 +1,11 @@
+#marqueecontainer{
+    background-color: white;
+    overflow: hidden;
+    border: 0px solid black;
+    padding: 2px;
+    padding-left: 4px;
+}
+.myslides{
+    height: calc(400px);
+    width: inherit;
+}
