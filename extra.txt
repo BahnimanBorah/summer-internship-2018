@@ -23,3 +23,5 @@ News</big></big>
 </div>
 </div><h3>
 <div>
+
+https://stackoverflow.com/questions/17153624/using-php-to-upload-file-and-add-the-path-to-mysql-database
