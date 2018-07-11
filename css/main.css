@@ -1,11 +1,28 @@
-#marqueecontainer{
-    background-color: white;
-    overflow: hidden;
-    border: 0px solid black;
-    padding: 2px;
-    padding-left: 4px;
+@media(max-width: 768px){
+    body{
+        margin: 0;
+        background-image: url(../images/background.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: calc(100%);
+    }
+    .slideshow{
+        width: inherit;
+        height: calc(250px);
+    }
+    
 }
-.myslides{
-    height: calc(400px);
-    width: inherit;
+@media(min-width: 769px){
+    body{
+        margin: 0;
+        background-image: url(../images/bg1.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: calc(100%);
+    }
+    .slideshow{
+        width: inherit;
+        height: calc(450px);
+    }
+   
 }
