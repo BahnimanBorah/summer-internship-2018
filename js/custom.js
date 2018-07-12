@@ -122,8 +122,7 @@ $(document).ready(function(){
     $(".dropdown-menu").mouseleave(function(){
         $(this).dropdown("toggle");
     });
-    
-    
+   
 
 });
 

@@ -28,3 +28,15 @@ introduction();
     xhttp.send();
     document.getElementById('blogcontent');
   }
+
+  function adminpanel() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("adminpanel").innerHTML =
+        this.responseText;
+      }
+    };
+    xhttp.open("GET", "../pages/panel.html", true);
+    xhttp.send();
+  }
