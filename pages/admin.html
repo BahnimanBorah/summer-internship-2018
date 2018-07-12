@@ -18,7 +18,7 @@
                 
                 <nav class="navbar navbar-expand-md bg-light navbar-light">
                         <!-- Brand -->
-                        <a class="navbar-brand" href="index.html">Home</a>
+                        <a class="navbar-brand" href="../index.html">Home</a>
                       
                         <!-- Toggler/collapsibe p -->
                         <p class="navbar-toggler" type="p" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -76,7 +76,7 @@
                         <div class="form-group">
                             <label class="text-light" for="type">Type:</label>
                             <select name="type" id="type" class="form-control form-control-sm">
-                                <option id="opt1" value="employee">Employee</option>
+                                <option id="opt1" value="employee" selected>Employee</option>
                                 <option id="opt2" value="pdf">Upload PDF</option>
                                 <option id="opt3" value="update">Important Update</option>
                             </select>
@@ -108,8 +108,8 @@
                                             <div class="form-group">
                                                 <label class="text-light" for="caption">Heading:</label>
                                                 <input type="text" name="caption" class="form-control form-control-sm" placeholder="Enter caption">
-                                                <label class="text-light" for="image">Image file:</label>
-                                                <input type="file" name="image" id="image" accept="image/*">
+                                                <label class="text-light" for="image">PDF file:</label>
+                                                <input type="file" name="image" id="image" accept=".pdf">
                                             </div>
                         
                                             
@@ -125,7 +125,7 @@
                                                 <label class="text-light" for="caption">Heading:</label>
                                                 <input type="text" name="caption" class="form-control form-control-sm" placeholder="Enter caption">
                                                 <label class="text-light" for="image">Update:</label>
-                                                <input type="file" name="update" id="update">
+                                                <input type="text" name="update" id="update">
                                             </div>
                         
                                             
@@ -174,11 +174,13 @@
             }
             if($("select[name='type']").val()=="pdf"){
                 $("#employeedetails").hide();
-                $("#pdfdetails").hide();
-                $("#updatedetails").show();
+                $("#pdfdetails").show();
+                $("#updatedetails").hide();
             }
             if($("select[name='type']").val()=="update"){
-                alert("Its working");
+                $("#employeedetails").hide();
+                $("#pdfdetails").hide();
+                $("#updatedetails").show();
             }
         });
 
