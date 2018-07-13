@@ -8,5 +8,5 @@ var quotes = [
 ];
 
 for(var i=0;i<quotes.length;i++){
-    document.write("<p class='text-light lead small'>"+quotes[i]+"</p>")
+    document.write("<p class='text-dark lead small'>"+quotes[i]+"</p>")
 }
