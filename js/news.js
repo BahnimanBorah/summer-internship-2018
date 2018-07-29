@@ -7,5 +7,5 @@ var quotes = [
 ];
 
 for(var i=0;i<quotes.length;i++){
-    document.write("<p><a class='text-warning lead small' href='#'>-"+quotes[i]+"</a></p>")
+    document.write("<p><a class='text-light lead small' href='#'>-"+quotes[i]+"</a></p>")
 }

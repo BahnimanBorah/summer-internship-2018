@@ -1,7 +1,7 @@
 @media(max-width: 768px){
     body{
         margin: 0;
-        background-image: url(../images/background.jpg);
+        
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: calc(100%);
@@ -15,7 +15,7 @@
 @media(min-width: 769px){
     body{
         margin: 0;
-        background-image: url(../images/bg1.jpg);
+        
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: calc(100%);
@@ -24,5 +24,59 @@
         width: inherit;
         height: calc(450px);
     }
+    
    
+}
+.jumbotron{
+    background: transparent;
+}
+#headersection{ 
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#contactsection{
+    background-image: url(../images/background.jpg);
+    /* Create the parallax scrolling effect */
+    background-attachment: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#welcome{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transition: opacity 2s;
+}
+#welcome:hover{
+    opacity: 0;
+}
+#mainsection{
+    background-image: url(../images/bg1.jpg);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#photogallery{
+    background-image: url(../images/mtain.jpg);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.fa{
+    color: white;
+    transition: color 1s;
+}
+.fa:hover{
+    color: dodgerblue;
 }
