@@ -15,59 +15,49 @@
         <div class="row" id="headersection">
             <div class="col-lg-12 jumbotron" style="padding-bottom: calc(20px)">
                 <h1 class="text-primary">Example Company Limited</h1>
-                
-                <nav class="navbar navbar-expand-md navbar-light">
-                        <!-- Brand -->
-                        <a class="navbar-brand" href="index.html">Home</a>
-                      
-                        <!-- Toggler/collapsibe p -->
-                        <p class="navbar-toggler" type="p" data-toggle="collapse" data-target="#collapsibleNavbar">
-                          <span class="navbar-toggler-icon"></span>
-                        </p>
-                      
-                        <!-- Navbar links -->
-                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                          <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Services</a>
-                              <div class="dropdown-menu">
-                                    <a class="dropdown-item navbar-link" href="#">Drilling</a>
-                                    <a class="dropdown-item navbar-link" href="#">Surface Team</a>
-                                    <a class="dropdown-item navbar-link" href="#">Production</a>
-                                    <a class="dropdown-item navbar-link" href="#">Infocom</a>
-                                    <a class="dropdown-item navbar-link" href="#">Chemists</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Form</a>
-                                    <div class="dropdown-menu">
-                                      <a class="dropdown-item" href="#">Leave Application</a>
-                                      <a class="dropdown-item" href="#">Request Service</a>
-                                      <a class="dropdown-item" href="#">Telephone Installation</a>
-                                    </div>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#contactsection">Contact Us <span class="fa fa-phone text-dark"></a>
-                            </li>
-                          </ul>
-                        </div>
-                </nav>
+                <h6><i>"Reinventing Energy !"</i></h6>
+                <i style="color:dodgerblue" class="float-right fa fa-cubes fa-4x"></i>
             </div>
         </div>
 
         <div class="row" id="mainsection">
-            <div class="col-lg-12 jumbotron">
+            <div class="col-lg-12">
                 <div class="row">
-                    <div class="col-lg-9 col-xs-12">
+                        <div class="col-lg-2 col-xs-2" id="sidenavigation">
+                                <table class="table">
+                                    <tr><td><a href="index.html">Home</a></td></tr>
+                                    <tr class="dropdowncalls"><td>
+                                            <a href="#">Services</a> <i class="fa fa-plus-circle text-dark"></i>
+                                            <table class="table mynavdropdowns">
+                                                  <tr><td><a href="#">Drilling</a></td></tr>
+                                                  <tr><td><a href="#">Surface Team</a></td></tr>
+                                                  <tr><td><a href="#">Production</a></td></tr>
+                                                  <tr><td><a href="#">Infocom</a></td></tr>
+                                                  <tr><td><a href="#">Chemists</a></td></tr>
+                                            </table>
+                                    </td></tr>
+                                    <tr class="dropdowncalls"><td>
+                                            <a href="#">Circulars</a> <i class="fa fa-plus-circle text-dark"></i>
+                                            <table class="table mynavdropdowns">
+                                                  <tr><td><a href="#">Holidays</a></td></tr>
+                                                  <tr><td><a href="#">Main Events</a></td></tr>
+                                                  <tr><td><a href="#">Monthly Analysis</a></td></tr>
+                                                  <tr><td><a href="#">Important</a></td></tr>
+                                            </table>
+                                    </td></tr>
+                                    <tr><td><a href="#contactsection">Contact</a></td></tr>
+                                </table>
+                        </div>
+                    <div class="col-lg-8 col-xs-12">
                         <div class="card" style="background:transparent;border:none" id="blogcontent">
                         
                         </div>
                         
                         
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-2">
                             <h4 class="text-primary">Important Updates</h4>
-                            <div class="card" style="height:300px;overflow: hidden;border:none;background-color: rgb(0, 0, 139, 0.5)">
+                            <div class="card mynews">
     
                                     
                                                 
@@ -85,7 +75,7 @@
                                 
                             </div>
                         <h4 class="text-info">News</h4>
-                        <div class="card" style="height:300px;overflow: hidden;border:none;background-color: rgb(0, 0, 139, 0.5)">
+                        <div class="card mynews">
 
                                 
                                 
@@ -101,14 +91,14 @@
                             
                         </div>
                         <h4 class="text-info">More News</h4>
-                        <div class="card" style="height:300px;overflow: hidden;border:none;background-color: rgb(0, 0, 139, 0.5)">
+                        <div class="card mynews">
 
                                 
                                 
                                     <div id="marqueecontainer2" onMouseover="copyspeed2=pausespeed2" onMouseout="copyspeed2=marqueespeed2">
                                         <div id="vmarquee2" style="position: absolute;">
                                                     
-                                        <script src="js/news.js"></script>
+                                        <script src="js/feeds.js"></script>
 
                                         <!--YOUR SCROLL CONTENT HERE-->
                                         </div>
@@ -124,7 +114,6 @@
         </div>
         <div class="row" style="padding-top: 2%;padding-bottom: 2%" id="photogallery">
             <div class="col-lg-6">
-                    <h3 class="text-light lead text-center">Some Pictures</h3>
                     <div id="demo" class="carousel slide" data-ride="carousel">
 
                             <!-- Indicators -->
@@ -157,13 +146,13 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img class="img-responsive rounded slideshow" src="images/s1.jpg">
+                                <img class="img-responsive rounded slideshow" src="images/s4.jpg">
                                 <div class="carousel-caption">
                                 <p class="text-light lead">Image Caption/Link</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img class="img-responsive rounded slideshow" src="images/s2.jpg">
+                                <img class="img-responsive rounded slideshow" src="images/s5.jpeg">
                                 <div class="carousel-caption">
                                 <p class="text-light lead">Image Caption/Link</p>
                                 </div>
@@ -178,6 +167,22 @@
                             <span class="carousel-control-next-icon"></span>
                             </a>
                     </div>
+            </div>
+            <div class="col-lg-6">
+                <h1 class="text-center text-light lead">Our Expeditions</h1>
+                <p class="text-justify text-light">
+                    Mountaineering is the sport of mountain climbing. While some scholars identify mountaineering-related 
+                    activities as climbing (rock and ice) and trekking up mountains, others are also adding backpacking, 
+                    hiking, skiing, via ferrata and wilderness activities, and still others state that mountaineering activities 
+                    also include indoor climbing, sport climbing and bouldering. However, to most of the scholars, the term 
+                    mountaineering is understood as climbing (which now refers to adventure climbing or sports climbing) and trekking 
+                    (hill walking in 'exotic' places). Hiking in the mountains can also be a simple form of mountaineering when it
+                     involves scrambling, or short stretches of the more basic grades of rock climbing, as well as crossing glaciers. 
+                </p>
+                <p class="text-justify text-light">
+                    A team of our selected employees goes on to discover a mountaineering experience every year, these expeditions are 
+                    lead by expert instructors and mountaineering experts. Come have a look at the summit of 2018.
+                </p>
             </div>
         </div>
 

@@ -112,16 +112,11 @@ else if (document.getElementById){
 /** NEWS BULLETIN SLIDE SHOW ENDS HERE*/
 
 
-/**JQUERY EVENTS */
+/** JQUERY EVENTS */
 
 $(document).ready(function(){
 
-    $(".dropdown-toggle").mouseenter(function(){
-        $(this).dropdown("toggle");
-    });
-    $(".dropdown-menu").mouseleave(function(){
-        $(this).dropdown("toggle");
-    });
+    
    
 
 });
